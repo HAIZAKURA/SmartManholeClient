@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "element-theme-ink": "^1.0.1",
     "element-ui": "^2.13.1",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",

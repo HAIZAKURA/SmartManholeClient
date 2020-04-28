@@ -12,8 +12,8 @@ Vue.use(VueRouter)
     children: [
       {
         path: '/',
-        name: 'about',
-        component: () => import('../views/About.vue')
+        name: 'dash',
+        component: () => import('../views/Dash.vue')
       },
       {
         path: 'logs',

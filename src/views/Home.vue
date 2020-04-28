@@ -123,7 +123,7 @@ export default {
 .aside
   height 100%
   max-width 180px
-  overflow hidden
+  overflow-x hidden
 
 .aside-menu
   height 100vh

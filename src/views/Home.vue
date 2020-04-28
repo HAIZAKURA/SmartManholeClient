@@ -25,10 +25,10 @@
               <i class="el-icon-coin"></i>
               <span>&nbsp;设&nbsp;备</span>
             </template>
-            <el-menu-item class="aside-submenu-item" index="dev-list">
+            <el-menu-item class="aside-submenu-item" index="devlist">
               <span>设&nbsp;备&nbsp;列&nbsp;表</span>
             </el-menu-item>
-            <el-menu-item class="aside-submenu-item" index="dev-map">
+            <el-menu-item class="aside-submenu-item" index="devmap">
               <span>设&nbsp;备&nbsp;地&nbsp;图</span>
             </el-menu-item>
           </el-submenu>
@@ -37,10 +37,10 @@
               <i class="el-icon-suitcase"></i>
               <span>&nbsp;组&nbsp;织</span>
             </template>
-            <el-menu-item class="aside-submenu-item" index="dep-list">
+            <el-menu-item class="aside-submenu-item" index="deptlist">
               <span>组&nbsp;织&nbsp;列&nbsp;表</span>
             </el-menu-item>
-            <el-menu-item class="aside-submenu-item" index="dep-info">
+            <el-menu-item class="aside-submenu-item" index="deptinfo">
               <span>组&nbsp;织&nbsp;信&nbsp;息</span>
             </el-menu-item>
           </el-submenu>
@@ -49,10 +49,10 @@
               <i class="el-icon-user"></i>
               <span>&nbsp;用&nbsp;户</span>
             </template>
-            <el-menu-item class="aside-submenu-item" index="usr-list">
+            <el-menu-item class="aside-submenu-item" index="userlist">
               <span>用&nbsp;户&nbsp;列&nbsp;表</span>
             </el-menu-item>
-            <el-menu-item class="aside-submenu-item" index="usr-info">
+            <el-menu-item class="aside-submenu-item" index="self">
               <span>个&nbsp;人&nbsp;信&nbsp;息</span>
             </el-menu-item>
           </el-submenu>

@@ -1,11 +1,11 @@
 <template>
   <div class="devli">
-    <div class="devli-title">
+    <div class="devli-title">Device List</div>
     <div class="dev" ref="devTable">
       <el-table
         :data="devList"
         style="width: 100%"
-        :height="devListHeight"
+        :max-height="devListHeight"
       >
         <el-table-column
           prop="vstat"
@@ -222,5 +222,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.dev
+  border 1px solid #DCDFE6
 </style>

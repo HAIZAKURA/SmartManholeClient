@@ -16,9 +16,39 @@ Vue.use(VueRouter)
         component: () => import('../views/Dash.vue')
       },
       {
+        path: '/devlist',
+        name: 'devli',
+        component: () => import('../views/Devli.vue')
+      },
+      {
+        path: '/devmap',
+        name: 'devma',
+        component: () => import('../views/Devma.vue')
+      },
+      {
+        path: '/deptlist',
+        name: 'depli',
+        component: () => import('../views/Depli.vue')
+      },
+      {
+        path: '/deptinfo',
+        name: 'depin',
+        component: () => import('../views/Depin.vue')
+      },
+      {
+        path: '/userlist',
+        name: 'usrli',
+        component: () => import('../views/Usrli.vue')
+      },
+      {
+        path: '/self',
+        name: 'self',
+        component: () => import('../views/Self.vue')
+      },
+      {
         path: 'logs',
-        name: 'about2',
-        component: () => import('../views/About2.vue')
+        name: 'logs',
+        component: () => import('../views/Logs.vue')
       }
     ]
   },

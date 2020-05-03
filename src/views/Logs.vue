@@ -1,6 +1,9 @@
 <template>
   <div class="logs">
-    <h1>This is an about2 page</h1>
+    <div class="title">
+      <span class="title-text">日&nbsp;志</span>
+    </div>
+    <el-divider></el-divider>
   </div>
 </template>
 
@@ -11,5 +14,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.title
+  text-align left
+  &-text
+    font-size 2em
+  &-btn
+    height 2em
+    line-height 2em
+    float right
 </style>

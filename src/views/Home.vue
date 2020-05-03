@@ -64,24 +64,28 @@
       </el-aside>
       <el-container>
         <el-header class="header">
-          <el-menu
-            class="header-menu"
-            mode="horizontal"
-            background-color="#242327"
-            text-color="#fff"
-            active-text-color="#ffd04b"
-          >
-            <div class="header-menu-item">
-              <span class="header-user">USERNAME</span>
+          <div class="header-tool">
+            <div class="header-tool-item">
+              <span class="header-user">{{ uname }}</span>
               <el-button type="danger" size="medium" round @click="logout">登出</el-button>
             </div>
-          </el-menu>
+          </div>
         </el-header>
-        <el-main>
+        <el-main class="main-view">
           <router-view></router-view>
         </el-main>
       </el-container>
     </el-container>
+    <div v-if="cover" class="cover">
+      <div class="cover-content">
+        <div class="cover-content-text">
+          <span><i class="el-icon-warning-outline"></i>会话已过期</span>
+        </div>
+        <div class="cover-content-btn">
+          <el-button type="primary">重新登录</el-button>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -90,6 +94,11 @@ import { mapGetters, mapActions } from 'vuex'
 
 export default {
   name: 'Home',
+  data() {
+    return {
+      cover: false
+    }
+  },
   computed: {
     defaultActive() {
       return '/' + this.$route.path.split('/').reverse()[0];
@@ -124,6 +133,7 @@ export default {
   height 100%
   max-width 180px
   overflow-x hidden
+  z-index 1
 
 .aside-menu
   height 100vh
@@ -161,5 +171,45 @@ export default {
 .header-user
   color #ffffff
   margin-right 32px
+
+.main-view
+  padding 1.5em 3em
+
+.header-tool
+  background-color #242327
+  height 60px
+  width 100%
+  position absolute
+  top 0px
+  right 0px
+  z-index 0
+  padding-right 2em
+  &-item
+    float right
+    line-height 60px
+    height 60px
+    margin auto
+    z-index 0
+
+.cover
+  position absolute
+  top 0px
+  left 0px
+  height 100vh
+  width 100vw
+  background-color rgba(255, 255, 255, 0.4)
+  backdrop-filter blur(10px)
+  z-index 99
+  &-content
+    margin-top 15%
+    &-text
+      font-size 60px
+      height 100px
+      line-height 100px
+      display inline
+      letter-spacing 16px
+    &-btn
+      height 100px
+      line-height 100px
 
 </style>
